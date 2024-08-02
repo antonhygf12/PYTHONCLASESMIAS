@@ -24,7 +24,7 @@ y hemos visto algunas interfaces como:
 'registrar nombre telefono y direccion' 
 
 con este interfaz aprendimos a utilizar lo que son: label, entradas, mensajes de caja, buttons, la condicional if y libreria tkinter
-
+´´´
 import tkinter as tk
 from tkinter import messagebox
 
@@ -48,7 +48,7 @@ def guardar_datos():
         messagebox.showinfo("informacion", "datos registrados")
         messagebox.showwarning("advertencia", "todos los campos son obligatorios")
 
-#definicion de interfaz, espacio de trabajo       
+     
 root = tk.Tk()
 root.title("Registradora de datos")
 root.geometry("400x300")
@@ -79,3 +79,67 @@ button.pack(pady= 5)
 
 
 root.mainloop()
+´´´
+
+en el siguiente programa nos enseño en esta unidad que podemos hacer que un programa tenga un numero como base y no reconozca a los demas 
+
+este programa esta conformado por, libreria tkinter, labels, buttons, entrys y cajas de texto y tiene como base al número 5 y si se ingresa algun otro va a responder con 
+valor no asignado 
+
+'''
+
+import tkinter as tk 
+from tkinter import messagebox
+
+def guardar_datos():
+    numero = entry_numero.get()
+
+    if numero ==5:
+         messagebox.showinfo("informacion","pueba tecnica supeada")
+
+    else:
+      
+        messagebox.showwarning("advertencia","valor no asignado")
+     
+root = tk.Tk()
+root.title("prueba tecnica 1")
+root.geometry("400x300")
+
+label = tk.Label(root, text="ingresa el número correspondiente")
+label.pack(pady= 5)
+
+
+entry_numero = tk.Entry()
+entry_numero.pack(pady= 5)
+
+
+button = tk.Button(root, text="ejecutar", command=messagebox)
+button.pack(pady= 5)
+
+
+
+
+root.mainloop()
+
+'''
+
+
+uno de los ultimos prgramas q vimos fue a usar la libreria "random" y el ".choice"  
+la función que tiene este programa nada más es tirar mensajes aleatorios puestos por el usuario y asignados una una variable de distinto nombre 
+
+'''
+import random
+diccionario={
+    'clave': "hola",
+    'clave1': "que tal",
+    'clave2': "bien"
+    
+} 
+Variable= random.choice(list(diccionario.values()))
+print(Variable)
+'''
+
+
+
+aqui concluye un poco de lo que fatima y yo (antonio) emos aprendido esta unidad 
+agradecidos con su persona y perdone si no es mucho.
